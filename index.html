@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 1).
+    <script>
+        function findDivisibleNumbers(randomNumbers, divisors) {
+  const result = [];
+
+  for (let i = 0; i < randomNumbers.length; i++) {
+    const number = randomNumbers[i];
+    for (let j = 0; j < divisors.length; j++) {
+      const divisor = divisors[j];
+      if (number % divisor === 0) {
+        result.push(number);
+        break;
+      }
+    }
+  }
+
+  return result;
+}
+
+const randomNumbers = [15, 23, 30, 42, 55, 66, 78, 81];
+const divisors = [2, 3, 5, 11];
+
+const divisibleNumbers = findDivisibleNumbers(randomNumbers, divisors);
+console.log(divisibleNumbers);
+
+    </script> -->
+
+    <!-- 2).
+    <script>
+        function generateRandomNumbers(count, start, end) {
+  const result = [];
+
+  for (let i = 0; i < count; i++) {
+    const randomNumber = Math.floor(Math.random() * (end - start + 1)) + start;
+    result.push(randomNumber);
+  }
+
+  return result;
+}
+
+const numberOfNumbers = 5;
+const startRange = 1;
+const endRange = 100;
+
+const randomNumbers = generateRandomNumbers(numberOfNumbers, startRange, endRange);
+console.log(randomNumbers);
+
+    </script> -->
+
+   <!-- 3). <script>function sortArray(numbers) {
+  return numbers.sort((a, b) => a - b);
+}
+
+const randomNumbers = [8, 3, 10, 1, 6, 5];
+
+const sortedNumbers = sortArray(randomNumbers);
+console.log(sortedNumbers);
+</script> -->
+
+  <!-- 4).  <script>
+    function generateRandomColors(count) {
+  const colors = [];
+
+  for (let i = 0; i < count; i++) {
+    const red = Math.floor(Math.random() * 256);
+    const green = Math.floor(Math.random() * 256);
+    const blue = Math.floor(Math.random() * 256);
+    const rgbColor = `rgb(${red}, ${green}, ${blue})`;
+    colors.push(rgbColor);
+  }
+
+  return colors;
+}
+
+const numberOfColors = 5;
+
+const randomColors = generateRandomColors(numberOfColors);
+console.log(randomColors);
+
+   </script> -->
+
+
+
+   <!-- 5). <script>
+    function printColoredText(colors) {
+  colors.forEach(color => {
+    console.log(`%c ${color} `, `background-color: ${color}; color: white;`);
+  });
+}
+
+const randomColors = ["rgb(255, 0, 0)", "rgb(0, 255, 0)", "rgb(0, 0, 255)"];
+
+printColoredText(randomColors);
+
+   </script> -->
+</body>
+</html>
